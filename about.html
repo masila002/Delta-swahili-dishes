@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Delta Swahili Dishes, our story, mission, and commitment to authentic Swahili cuisine from Kenya, Tanzania, and Zanzibar.">
+    <meta name="keywords" content="Swahili dishes, Kenyan coastal food, Zanzibar cuisine, authentic Swahili restaurant, Mombasa dishes">
+    <title>Delta Swahili Dishes - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #00CED1;
+            --coral: #FF7F50;
+            --coconut-brown: #8B4513;
+            --gold: #FFD700;
+            --white: #FFF;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--coconut-brown);
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .navbar {
+            background-color: var(--coconut-brown) !important;
+            position: sticky;
+            top: 0;
+        }
+        .navbar-brand {
+            font-family: 'Bondoni Serif', serif;
+        }
+@keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .intro-section h1 {
+            animation: slideInLeft 1s ease-out;
+        }
+        .intro-section .lead {
+            animation: slideInLeft 1.2s ease-out 0.3s both;
+        }
+        .animate-on-scroll h2 {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .animate-on-scroll.animated h2 {
+            animation: zoomIn 0.8s ease-out;
+            opacity: 1;
+        }
+        .animate-on-scroll p {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .animate-on-scroll.animated p {
+            animation: zoomIn 0.8s ease-out 0.2s both;
+            opacity: 1;
+        }
+        .animate-on-scroll img {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .animate-on-scroll.animated img {
+            animation: zoomIn 0.8s ease-out 0.4s both;
+            opacity: 1;
+        }
+        .intro-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/celebrating swahili.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            color: var(--white);
+            text-align: center;
+            height: 80vh;
+        }
+        .mission-vision {
+            background-color: var(--white);
+            padding: 50px 0;
+            color: var(--coconut-brown);
+        }
+        .chef-section {
+            padding: 50px 0;
+        }
+        .cultural-section {
+            background-color: var(--white);
+            padding: 50px 0;
+        }
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            color: var(--white);
+            text-align: center;
+            height: 40vh;
+        }
+        .cta-section .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+        }
+        .footer {
+            background-color: var(--coconut-brown);
+            color: var(--white);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Delta Swahili Dishes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section - Our Story -->
+    <section class="intro-section">
+        <div class="container">
+            <h1>A Celebration of Swahili Culture Through Food</h1>
+            <p class="lead">Delta Swahili Dishes was born from a passion for authentic coastal flavors and warm hospitality. Inspired by the rich culinary traditions of Mombasa, Zanzibar, and Dar es Salaam, we bring together the spices, aromas, and stories that define Swahili cuisine.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Mission & Vision</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0" style="background-color: var(--white); color: var(--coconut-brown); box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                        <div class="card-body" style="padding: 40px;">
+                            <h3 class="card-title" style="text-align: center;">Mission</h3>
+                            <p class="card-text">To preserve and share the rich culinary heritage of the Swahili Coast by serving dishes prepared with love, authenticity, and tradition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0" style="background-color: var(--white); color: var(--coconut-brown); box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                        <div class="card-body" style="padding: 40px;">
+                            <h3 class="card-title" style="text-align: center;">Vision</h3>
+                            <p class="card-text">To become the leading destination for Swahili coastal cuisine in East Africa, where every guest feels the warmth of our culture and the richness of our flavors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </section>
+
+    <!-- Meet the Chef / Team Section -->
+    <section class="chef-section animate-on-scroll">
+        <div class="container text-center">
+            <h2>Meet the Heart Behind Our Kitchen</h2>
+            <p>Our kitchen is led by Chef Salim — a master of Swahili flavors who grew up surrounded by the aromas of coconut, tamarind, and cardamom. With years of experience and a deep respect for tradition, he leads our team in creating dishes that tell the story of the coast.</p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4 mb-4">
+                    <img src="Images/chef-serving-food-stockcake.jpg" alt="Chef Salim" class="profile-img mb-3">
+                    <h4>Chef Salim</h4>
+                    <p>Head Chef</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/female chef.jpg" alt="Sous Chef" class="profile-img mb-3">
+                    <h4>Amina</h4>
+                    <p>Sous Chef</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/manager.jpg" alt="Restaurant Manager" class="profile-img mb-3">
+                    <h4>Jamal</h4>
+                    <p>Restaurant Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="my-5" style="border-top: 2px solid var(--coral);">
+    <!-- Cultural Heritage Section -->
+    <section class="cultural-section animate-on-scroll">
+        <div class="container text-center">
+            <h2>Rooted in Coastal Tradition</h2>
+            <p>Every meal at Delta Swahili Dishes carries a piece of history. From Zanzibar’s spice markets to Mombasa’s street food and Lamu’s festive gatherings, our dishes are crafted to honor the communities and stories that have shaped coastal cuisine for generations.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <img src="Images/spices.webp" alt="Spices" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/Street food.webp" alt="Coastal Market" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/Lamu dhows.jpg" alt="Dhows at Sunset" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta-section animate-on-scroll">
+        <div class="container">
+            <h2>Join us in celebrating the flavors and spirit of the Swahili Coast.</h2>
+            <a href="menu.html" class="btn btn-lg">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Phone: +254 123 456 789</p>
+                    <p>Email: info@deltaswahilidishes.com</p>
+                    <p>Address: 123 Swahili Street, Nairobi, Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Operating Hours</h5>
+                    <p>Mon-Sun: 8AM - 10PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 Delta Swahili Dishes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/254743053114" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    });
+</script>
+</body>
+</html>

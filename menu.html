@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our menu of authentic Swahili dishes from Kenya, Tanzania, and Zanzibar. Discover coastal flavors at Delta Swahili Dishes.">
+    <meta name="keywords" content="Swahili food menu, Kenyan coastal dishes, Zanzibar cuisine, Delta Swahili Dishes menu">
+    <title>Delta Swahili Dishes - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:wght@400;700&family=Bondoni+Serif:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #00CED1;
+            --coral: #FF7F50;
+            --coconut-brown: #8B4513;
+            --gold: #FFD700;
+            --white: #FFF;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--coconut-brown);
+            background-color: var(--white);
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        .navbar {
+            background-color: var(--coconut-brown) !important;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-family: 'Bondoni Serif', serif;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .hero h1 {
+            animation: slideInLeft 1s ease-out;
+        }
+        .hero .lead {
+            animation: slideInLeft 1.2s ease-out 0.3s both;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/celebrating swahili.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+        }
+        .intro-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        .menu-section {
+            padding: 50px 0;
+        }
+        .menu-item {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .menu-item .card-body {
+            padding: 20px;
+        }
+        .price {
+            color: var(--coral);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .specials-section {
+            background-color: var(--gold);
+            padding: 50px 0;
+        }
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/sunset.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            color: var(--white);
+            text-align: center;
+            height: 40vh;
+        }
+        .cta-section .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: var(--coconut-brown);
+            color: var(--white);
+        
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 70px;
+            background-color: var(--white);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sticky-nav a {
+            color: var(--coconut-brown);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .sticky-nav a:hover {
+            color: var(--coral);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Delta Swahili Dishes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>Authentic Swahili Dishes from the Coast of Kenya, Tanzania & Zanzibar</h1>
+            <p class="lead">Every dish tells a story — rich in culture, flavor, and tradition.</p>
+            <a href="#order" class="btn btn-lg">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container text-center">
+            <h2>Taste the Swahili Heritage</h2>
+            <p>At Delta Swahili Dishes, we bring you an unforgettable culinary experience inspired by the coastal regions of East Africa. Our menu celebrates centuries-old recipes infused with tropical ingredients, spices, and love.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img src="images/zanzibar spices.jpg" alt="Chef grinding spices" class="img-fluid rounded" style="height: 250px; object-fit: cover;width: 100%;">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/family.jpg" alt="Assorted Swahili dishes on table" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Navigation -->
+    <div class="sticky-nav">
+        <div class="container text-center">
+            <a href="#starters">Starters & Bites</a>
+            <a href="#mains">Main Dishes</a>
+            <a href="#drinks">Drinks & Refreshments</a>
+            <a href="#desserts">Sweet Coastal Treats</a>
+            <a href="#specials">Chef’s Specials</a>
+        </div>
+    </div>
+
+    <!-- Starters Section -->
+    <section id="starters" class="menu-section">
+        <div class="container">
+            <h2 class="text-center">Starters & Bites</h2>
+            <p class="text-center">Begin your Swahili journey with our light and flavorful starters — the perfect way to open your appetite.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/viazi.jpg" class="card-img-top" alt="Viazi Karai - Deep-fried spiced potatoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Viazi Karai</h5>
+                            <p class="card-text">Deep-fried spiced potatoes served with chutney.</p>
+                            <p class="price">Ksh 450</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/mishkaki.jpg" class="card-img-top" alt="Mishkaki - Skewered grilled beef">
+                        <div class="card-body">
+                            <h5 class="card-title">Mishkaki</h5>
+                            <p class="card-text">Skewered grilled beef in coastal marinade.</p>
+                            <p class="price">Ksh 650</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dishes Section -->
+    <section id="mains" class="menu-section bg-light">
+        <div class="container">
+            <h2 class="text-center">Main Dishes — The Heart of the Coast</h2>
+            <p class="text-center">Savor traditional Swahili dishes made with authentic spices, coconut milk, and love.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item card"style="height: 400px; object-fit: cover;">
+                        <img src="images/biryani.jpg" class="card-img-top" alt="Swahili Pilau - Fragrant spiced rice" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Swahili Pilau</h5>
+                            <p class="card-text">Fragrant spiced rice with beef or chicken.</p>
+                            <p class="price">Ksh 850</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-item card" style="height: 400px; object-fit: cover;">
+                        <img src="images/samaki wa kupaka.jpg" class="card-img-top" alt="Samaki wa Kupaka - Grilled fish in coconut sauce" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Samaki wa Kupaka</h5>
+                            <p class="card-text">Grilled fish in coconut sauce.</p>
+                            <p class="price">Ksh 950</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-item card" style="height: 400px; object-fit: cover;">
+                        <img src="images/biryani.jpg" class="card-img-top" alt="Biryani ya Pwani - Classic coastal biryani"style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Biryani ya Pwani</h5>
+                            <p class="card-text">Classic coastal biryani with aromatic basmati rice.</p>
+                            <p class="price">Ksh 900</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks & Refreshments -->
+    <section id="drinks" class="menu-section">
+        <div class="container">
+            <h2 class="text-center">Refreshing Tropical Drinks</h2>
+            <p class="text-center">Cool down with fresh coastal blends and tropical flavors.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/ukwaju juice.jfif" class="card-img-top" alt="Tamarind Juice - Sweet-sour tamarind drink">
+                        <div class="card-body">
+                            <h5 class="card-title">Tamarind Juice (Ukwaju)</h5>
+                            <p class="card-text">Sweet-sour tamarind drink.</p>
+                            <p class="price">Ksh 300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/chai.jpg" class="card-img-top" alt="Swahili Chai - Spiced tea">
+                        <div class="card-body">
+                            <h5 class="card-title">Swahili Chai</h5>
+                            <p class="card-text">Spiced tea with cardamom and cinnamon.</p>
+                            <p class="price">Ksh 250</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="menu-section bg-light">
+        <div class="container">
+            <h2 class="text-center">Sweet Coastal Treats</h2>
+            <p class="text-center">End your meal with a touch of Swahili sweetness — light, flavorful, and comforting.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/kaimati.jpg" class="card-img-top" alt="Kaimati - Golden sweet dumplings">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaimati</h5>
+                            <p class="card-text">Golden sweet dumplings glazed with syrup.</p>
+                            <p class="price">Ksh 350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item card">
+                        <img src="images/mahamri.jpg" class="card-img-top" alt="Mahamri - Fried sweet bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Mahamri</h5>
+                            <p class="card-text">Fried sweet bread served with tea.</p>
+                            <p class="price">Ksh 300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials & Seasonal Dishes -->
+    <section id="specials" class="specials-section">
+        <div class="container text-center">
+            <h2>Chef’s Specials & Coastal Favorites</h2>
+            <p>Enjoy rotating specials inspired by the sea, the spice markets, and our chef’s creativity.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="menu-item card border-warning" style="height: 400px; object-fit: cover;">
+                        <img src="images/crub.jpg" class="card-img-top" alt="Crab Curry Zanzibar Style">
+                        <div class="card-body">
+                            <h5 class="card-title">Crab Curry Zanzibar Style</h5>
+                            <p class="card-text">Inspired by spice markets of Zanzibar.</p>
+                            <p class="price">Ksh 1,200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="menu-item card border-warning" style="height: 400px; object-fit: cover;">
+                        <img src="images/lobster.jpg" class="card-img-top" alt="Lobster Coconut Stew">
+                        <div class="card-body">
+                            <h5 class="card-title">Lobster Coconut Stew</h5>
+                            <p class="card-text">Slow-cooked with Zanzibar spices.</p>
+                            <p class="price">Ksh 1,500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="menu-item card border-warning" style="height: 400px; object-fit: cover;">
+                        <img src="images/platter.jfif" class="card-img-top" alt="Plantain & Fish Platter">
+                        <div class="card-body">
+                            <h5 class="card-title">Plantain & Fish Platter</h5>
+                            <p class="card-text">A selection of our freshest coastal offerings.</p>
+                            <p class="price">Ksh 1,100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="order" class="cta-section">
+        <div class="container">
+            <h2>Hungry already? Order your favorite dish or book a table now.</h2>
+            <a href="https://wa.me/254743053114?text=Hello%20Delta%20Swahili%20Dishes%2C%20I%27d%20like%20to%20place%20an%20order." class="btn btn-lg">Order via WhatsApp</a>
+            <a href="reservation.html" class="btn btn-lg">Reserve a Table</a>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Phone: +254 123 456 789</p>
+                    <p>Email: info@deltaswahilidishes.com</p>
+                    <p>Address: 123 Swahili Street, Nairobi, Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Operating Hours</h5>
+                    <p>Mon-Sun: 8AM - 10PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 Delta Swahili Dishes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/254743053114" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

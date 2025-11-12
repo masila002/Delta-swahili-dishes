@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read testimonials from our guests at Delta Swahili Dishes. Discover what customers say about our Swahili cuisine and coastal hospitality.">
+    <meta name="keywords" content="Delta Swahili Dishes reviews, customer testimonials Swahili restaurant, Swahili food experience Kenya">
+    <title>Delta Swahili Dishes - Testimonials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:wght@400;700&family=Bondoni+Serif:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #00CED1;
+            --coral: #FF7F50;
+            --coconut-brown: #8B4513;
+            --gold: #FFD700;
+            --white: #FFF;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--coconut-brown);
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        .navbar {
+            background-color: var(--coconut-brown) !important;
+            position: sticky;
+            top: 0;
+        }
+        .navbar-brand {
+            font-family: 'Bondoni Serif', serif;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .hero h1 {
+            animation: slideInLeft 1s ease-out;
+        }
+        .hero .lead {
+            animation: slideInLeft 1.2s ease-out 0.3s both;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Images/happy.jpg') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+        }
+        .testimonials-section {
+            padding: 50px 0;
+        }
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .testimonial-card .stars {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        .testimonial-card blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .testimonial-card cite {
+            font-weight: bold;
+        }
+        .customer-stories {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        .story-item {
+            margin-bottom: 50px;
+        }
+        .story-item .row {
+            align-items: center;
+        }
+        .story-item blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--coconut-brown);
+        }
+        .video-section {
+            padding: 50px 0;
+            background-color: var(--turquoise);
+            color: var(--white);
+        }
+        .video-thumbnail {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .review-section {
+            padding: 50px 0;
+            background-color: var(--gold);
+        }
+        .form-container {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: var(--gold);
+        }
+        .community-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        .cta-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/sunset.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            color: var(--white);
+            text-align: center;
+        }
+        .cta-banner .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: var(--coconut-brown);
+            color: var(--white);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Delta Swahili Dishes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>What Our Guests Say</h1>
+            <p class="lead">Every meal tells a story — here’s what our guests have to say about their experience at Delta Swahili Dishes.</p>
+            <a href="#review-form" class="btn btn-lg">Share Your Experience</a>
+        </div>
+    </section>
+
+    <!-- Featured Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">Loved by Locals & Travelers Alike</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“The Pilau was heavenly! It took me straight to the heart of Mombasa — aromatic, rich, and perfectly spiced.”</blockquote>
+                        <cite>— Amina, Nairobi</cite>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“Authentic Swahili flavors that reminded me of home in Zanzibar. Every bite was a memory.”</blockquote>
+                        <cite>— Saidi, Dar es Salaam</cite>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“As a traveler, I’ve never felt so welcomed. The coconut curry was unforgettable!”</blockquote>
+                        <cite>— Michael, UK</cite>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“Warm hospitality and the best biryani I’ve ever had. Highly recommend!”</blockquote>
+                        <cite>— Joe, Mombasa</cite>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Customer Stories Section -->
+    <section class="customer-stories">
+        <div class="container">
+            <h2 class="text-center">Stories from Our Guests</h2>
+            <p class="text-center">Our guests come from all walks of life — locals, travelers, and food lovers who share one thing in common: their love for authentic Swahili cuisine.</p>
+            <div class="story-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote>“I visited Delta Swahili Dishes with my family — we felt like royalty! The coconut fish curry reminded me of home in Zanzibar.”</blockquote>
+                        <cite>— Saidi, Dar es Salaam</cite>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Images/guest dining.jfif" alt="Family dining at Delta Swahili Dishes" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="story-item">
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6">
+                        <blockquote>“As a traveler, I’ve never experienced such warmth and authenticity in one place.”</blockquote>
+                        <cite>— Michael, UK</cite>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Images/traveller.jpg" alt="Traveler enjoying meal" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="story-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote>“Every bite of biryani told a story — spicy, comforting, unforgettable.”</blockquote>
+                        <cite>— Halima, Mombasa</cite>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/biryani.jpg" alt="Biryani dish" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Add Your Review Section -->
+    <section id="review-form" class="review-section">
+        <div class="container text-center">
+            <h2>Share Your Experience</h2>
+            <p>Have you dined with us? We’d love to hear your thoughts! Your feedback helps us celebrate and improve our Swahili dining experience.</p>
+            <div class="form-container">
+                <form>
+                    <div class="mb-3">
+                        <label for="reviewName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="reviewName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewEmail" class="form-label">Email (Optional)</label>
+                        <input type="email" class="form-control" id="reviewEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Rating</label>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">☆</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">☆</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">☆</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">☆</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewText" class="form-label">Your Review</label>
+                        <textarea class="form-control" id="reviewText" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewPhoto" class="form-label">Upload a Photo (Optional)</label>
+                        <input type="file" class="form-control" id="reviewPhoto" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn" style="background-color: var(--coral); color: var(--white);">Submit Testimonial</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container text-center">
+            <h2>Part of the Delta Family</h2>
+            <p>Delta Swahili Dishes is more than a restaurant — it’s a community. Our guests are family, and every visit adds to our story.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <img src="Images/family dinner.jpg" alt="Family dinner" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/birthday.jpg" alt="Birthday celebration" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="Images/tourists.jfif" alt="Tourists with staff" class="img-fluid rounded" style="height: 250px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call-to-Action Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Your story belongs here. Come dine with us and experience the heart of Swahili hospitality.</h2>
+            <a href="reservation.html" class="btn btn-lg">Reserve a Table</a>
+            <a href="https://wa.me/254743053114?text=Hello%20Delta%20Swahili%20Dishes%2C%20I%27d%20like%20to%20place%20an%20order." class="btn btn-lg">Order Now via WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Phone: +254 123 456 789</p>
+                    <p>Email: info@deltaswahilidishes.com</p>
+                    <p>Address: 123 Swahili Street, Nairobi, Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Operating Hours</h5>
+                    <p>Mon-Sun: 8AM - 10PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 Delta Swahili Dishes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/254743053114" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

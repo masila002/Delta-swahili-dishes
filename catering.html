@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catering services by Delta Swahili Dishes for weddings, events, and celebrations. Authentic Swahili cuisine for your special occasions.">
+    <meta name="keywords" content="Swahili catering services Kenya, coastal dishes catering, Delta Swahili Dishes events, Swahili wedding catering">
+    <title>Delta Swahili Dishes - Catering</title>
+    <<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:wght@400;700&family=Bondoni+Serif:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #00CED1;
+            --coral: #FF7F50;
+            --coconut-brown: #8B4513;
+            --gold: #FFD700;
+            --white: #FFF;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--coconut-brown);
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        .navbar {
+            background-color: var(--coconut-brown) !important;
+            position: sticky;
+            top: 0;
+        }
+        .navbar-brand {
+            font-family: 'Bondoni Serif', serif;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .hero h1 {
+            animation: slideInLeft 1s ease-out;
+        }
+        .hero .lead {
+            animation: slideInLeft 1.2s ease-out 0.3s both;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Images/swahili coast.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+            margin: 0 10px;
+        }
+        .about-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        .packages-section {
+            padding: 50px 0;
+            background-color: var(--turquoise);
+            color: var(--black);
+        }
+        .package-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            color: var(--coconut-brown);
+        }
+        .gallery-section {
+            padding: 50px 0;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .booking-section {
+            padding: 50px 0;
+            background-color: var(--gold);
+        }
+        .form-container {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .testimonials-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        .packages-section {
+            padding: 50px 0;
+            background-color: #e0e4e9;
+        }
+        .package-card {
+            height: 100%;
+        }
+        .closing-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/sunset.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            color: var(--white);
+            text-align: center;
+        }
+        .closing-section .btn {
+            background-color: var(--coral);
+            border-color: var(--coral);
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: var(--coconut-brown);
+            color: var(--white);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Delta Swahili Dishes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catering.html">Catering</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bring the Flavors of the Swahili Coast to Your Event</h1>
+            <p class="lead">Authentic dishes, coastal charm, and exceptional service — wherever your event takes place.</p>
+            <a href="#booking-form" class="btn btn-lg">Request a Quote</a>
+            <a href="#packages" class="btn btn-lg">View Menu Packages</a>
+        </div>
+    </section>
+
+    <!-- About Catering Services -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Delta Swahili Dishes Catering</h2>
+                    <p>We specialize in delivering authentic Swahili cuisine for weddings, corporate events, private parties, and cultural celebrations. Our team handles everything from food preparation to presentation, ensuring a seamless experience for you and your guests.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Images/serving food.jpg" alt="Chef plating dishes at Delta Swahili Dishes" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Packages -->
+    <section id="packages" class="packages-section">
+        <div class="container text-center">
+            <h2>Our Catering Packages</h2>
+            <p>Choose from our curated menu options or request a custom menu to suit your event.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="package-card">
+                        <h3>Standard Coastal Feast</h3>
+                        <p>Perfect for intimate gatherings. Includes starters, main dishes, and desserts.</p>
+                        <ul class="text-start">
+                            <li>Mahamri & Chai</li>
+                            <li>Swahili Pilau</li>
+                            <li>Kaimati</li>
+                        </ul>
+                        <p class="price">Starting from Ksh 1,500 per person</p>
+                        <a href="#booking-form" class="btn" style="background-color: var(--coral); color: var(--white);">Request This Package</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="package-card">
+                        <h3>Premium Swahili Experience</h3>
+                        <p>Comprehensive menu with seafood, curries, and tropical drinks.</p>
+                        <ul class="text-start">
+                            <li>Samaki wa Kupaka</li>
+                            <li>Biryani ya Pwani</li>
+                            <li>Coconut Ice Cream</li>
+                        </ul>
+                        <p class="price">Starting from Ksh 2,500 per person</p>
+                        <a href="#booking-form" class="btn" style="background-color: var(--coral); color: var(--white);">Request This Package</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="package-card">
+                        <h3>Custom Package</h3>
+                        <p>Tailored menu according to your preferences and guest count.</p>
+                        <p>Contact us for personalized quotes and bespoke options.</p>
+                        <a href="#booking-form" class="btn" style="background-color: var(--coral); color: var(--white);">Request This Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery of Past Events -->
+    <section class="gallery-section bg-light">
+        <div class="container text-center">
+            <h2>Catering in Action</h2>
+            <p>See how we bring Swahili culture and cuisine to life at every event.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="Images/wedding catering.jpg" alt="Wedding table setup with Swahili dishes" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="Images/coperate catering.png" alt="Corporate event with plated Swahili dishes" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="Images/outdoor.jfif" alt="Outdoor party with colorful Swahili food" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Inquiry Form -->
+    <section id="booking-form" class="booking-section">
+        <div class="container text-center">
+            <h2>Plan Your Event With Us</h2>
+            <p>Tell us about your event and let our team create a unique Swahili dining experience.</p>
+            <div class="form-container">
+                <form>
+                    <div class="mb-3">
+                        <label for="cateringName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="cateringName" aria-describedby="cateringNameHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cateringEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="cateringEmail" aria-describedby="cateringEmailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cateringPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="cateringPhone" aria-describedby="cateringPhoneHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventType" class="form-label">Event Type</label>
+                        <select class="form-control" id="eventType" aria-describedby="eventTypeHelp" required>
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="party">Party</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Event Date & Time</label>
+                        <input type="datetime-local" class="form-control" id="eventDate" aria-describedby="eventDateHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="guests" class="form-label">Number of Guests</label>
+                        <input type="number" class="form-control" id="guests" min="1" aria-describedby="guestsHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cateringRequests" class="form-label">Special Requests / Notes</label>
+                        <textarea class="form-control" id="cateringRequests" rows="3" aria-describedby="cateringRequestsHelp"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: var(--coral); color: var(--white);">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Client Quotes -->
+    <section class="testimonials-section">
+        <div class="container text-center">
+            <h2>Our Clients Love Our Catering</h2>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <blockquote>“The catering for our wedding was flawless — authentic Swahili flavors that wowed our guests!”</blockquote>
+                    <cite>— Sarah, Nairobi</cite>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <blockquote>“Perfect for our corporate event. Fresh, flavorful, and professionally served.”</blockquote>
+                    <cite>— John, Mombasa</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action / Closing Section -->
+    <section class="closing-section">
+        <div class="container">
+            <h2>Make your next event unforgettable with the flavors and culture of the Swahili Coast.</h2>
+            <a href="#booking-form" class="btn btn-lg">Request a Quote</a>
+            <a href="https://wa.me/254743053114?text=Hello%20Delta%20Swahili%20Dishes%2C%20I%27d%20like%20to%20inquire%20about%20catering." class="btn btn-lg">Contact Us via WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Phone: +254 123 456 789</p>
+                    <p>Email: info@deltaswahilidishes.com</p>
+                    <p>Address: 123 Swahili Street, Nairobi, Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Operating Hours</h5>
+                    <p>Mon-Sun: 8AM - 10PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 Delta Swahili Dishes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/254743053114" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
